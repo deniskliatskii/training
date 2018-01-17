@@ -1,0 +1,69 @@
+/***
+*
+* BUTTON SEARCH
+*
+***/
+
+.searh-btn {
+  border: none;
+  background: $colorAccent;
+  border-radius: 5px;
+  color: $colorSubmit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: -0.019rem;
+  padding: 8px 14px 6px 14px;
+  cursor: pointer;
+}
+
+/***
+*
+* BUTTON UP
+*
+***/
+
+.btn-up {
+  position: fixed;
+  bottom: -50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $colorGray;
+  z-index: 999;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .8s;
+}
+
+    .btn-up__active{
+    bottom: 50px;
+    }
+
+    .btn-up:hover{
+    border: 2px solid $colorAccent;
+    }
+
+    .btn-up::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid $colorAccent;
+    border-left: 3px solid $colorAccent;
+    transform: rotate(45deg);
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+
+/***
+*
+* ./BUTTON UP
+*
+***/

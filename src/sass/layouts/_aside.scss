@@ -1,0 +1,125 @@
+.aside-content {
+    width: 48%;
+    padding: 13px 0 180px 0;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/***
+*
+* SEARCH
+*
+***/
+
+    .search {
+        text-align: right;
+        
+    }
+        .search-wrap {
+            background: $colorBorder;
+            display: inline-block;
+            padding: 6px 9px;
+            border-radius: 5px;
+            margin-bottom: 9px;
+        }
+
+/***
+*
+* SLIDER
+*
+***/
+
+    .slider-wrap {
+        padding: 17px 28px 29px 28px;
+        background: $colorBorder;
+        border-radius: 5px;
+        position: relative;
+        margin-bottom: 14px;
+    }
+
+    .slider-text {
+        position: absolute;
+        bottom: 8px;
+        right: 19px;
+        color: $colorGray;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: -0.037rem;
+    }
+
+/***
+*
+* TABS
+*
+***/
+
+    .tabs-wrap {
+        margin-bottom: 13px
+    }
+
+    /*============================
+            *** tab content ***
+    ==============================*/
+    
+    .tab-content {
+        background: $colorBorder;
+        border-radius: 0 0 5px 5px;
+        padding: 28px 0 39px 21px;
+    }
+
+        .fa-star {
+            color: $colorAccent;
+            font-size: 0.8rem;
+            margin-right: 9px;
+        }
+
+        .content__list-item {
+            font-family: $fontGeor;
+            color: $colorGray;
+            font-size: 0.938rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            letter-spacing: -0.024rem;
+        }
+
+    /*============================
+            *** tab  ***
+    ==============================*/
+
+    .tabs {
+        width: 100%;
+        font-size: 0;
+    }
+
+        .tabs__item {
+            display: inline-block;
+            margin-left: 4px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            font-size: 0.75rem;
+            color: $colorBorder;
+            font-weight: 400;
+            line-height: 1.125rem;
+            text-transform: uppercase;
+            padding: 11px 23px 8px 23px;
+            background: $colorGray;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+        }
+
+            // Active tab background & color text
+            .tabs__item--activ {
+                background: $colorBorder;
+                color: $colorAccent;
+            } 
+
+/***
+*
+* VIDEO
+*
+***/

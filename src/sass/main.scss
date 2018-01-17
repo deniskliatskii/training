@@ -1,0 +1,33 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Geo|Open+Sans:400,600,700|PT+Serif:400,700');
+// Fontawesome
+@import "../libs/fontawesome/font-awesome";
+// Normalize
+@import "../libs/normalize/normalize";
+// Slick slider style
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
+
+
+//  *** COMPONENTS ***
+
+// Adjustment & mixin
+@import "misc/_vars.scss";
+@import "misc/_mixin.scss";
+@import "misc/_adjustment.scss";
+
+//butons
+@import "components/_buttons.scss";
+@import "components/_inputs.scss";
+@import "components/_modalwindow.scss";
+
+//  *** LAYOUTS ***
+@import "layouts/_header.scss";
+@import "layouts/_nav.scss";
+@import "layouts/_maincontent.scss";
+@import "layouts/_aside.scss";
+@import "layouts/_footer.scss";
+
+
+
+
