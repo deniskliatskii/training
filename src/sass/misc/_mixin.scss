@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+@mixin titleAccent {
+  color: $colorAccent;
+  font-family: $fontGeor;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
 @mixin container {
   width: 996px;
   padding: 0 20px;

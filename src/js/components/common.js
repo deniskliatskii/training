@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('.slider').slick({
-       
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
     });
 
     /*
@@ -22,12 +24,12 @@ $(document).ready(function () {
     *
     */
 
-    $(document).scroll(function () {
-        if (($(document).scrollTop() > 400) & ($(document).width() > 800)) {
-            $('.main-header').addClass('header_fixed');
-        } else
-            $('.main-header').removeClass('header_fixed');
-    });
+    // $(document).scroll(function () {
+    //     if (($(document).scrollTop() > 400) & ($(document).width() > 800)) {
+    //         $('.main-header').addClass('header_fixed');
+    //     } else
+    //         $('.main-header').removeClass('header_fixed');
+    // });
 
 
     /*
@@ -36,13 +38,13 @@ $(document).ready(function () {
     *
     */
 
-    $('nav a').on('click', function (event) {
-        event.preventDefault();
-        var ellClick = $(this).attr('href');
-        var distScroll = $(ellClick).offset().top;
-        $('html, body').animate(
-            { 'scrollTop': distScroll }, 1500);
-    })
+    // $('nav a').on('click', function (event) {
+    //     event.preventDefault();
+    //     var ellClick = $(this).attr('href');
+    //     var distScroll = $(ellClick).offset().top;
+    //     $('html, body').animate(
+    //         { 'scrollTop': distScroll }, 1500);
+    // })
     
 
     /*
@@ -51,10 +53,10 @@ $(document).ready(function () {
     *
     */
 
-    $('.all-services__btn').on('click', function (event) {
-        event.preventDefault();
-        $('.all-services').slideToggle();
-    })
+    // $('.article-text span').on('click', function (event) {
+    //     event.preventDefault();
+    //     $('.show-more').slideToggle();
+    // })
 
 
     /*
@@ -76,6 +78,16 @@ $(document).ready(function () {
             $('.btn-up').removeClass('btn-up__active');
         }
     })
+
+
+    $('.bottom-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
  
 
 });

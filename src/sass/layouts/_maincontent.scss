@@ -31,6 +31,10 @@ article {
         left: 0;
         bottom: 17px;
     }
+
+    &:hover .img-title {
+        transform: translateX(50px);
+    }
 }
 
 .img-title {
@@ -44,6 +48,7 @@ article {
     line-height: 1.125rem;
     text-transform: uppercase;
     letter-spacing: -0.022rem;
+    transition: transform .2s linear;
 }
 
 .feature-card__title {
@@ -73,6 +78,7 @@ article {
     & > span {
         color: $colorGray;
         font-weight: 700;
+        transition: color .2s ease-in-out;
     }
     margin-bottom: 15px;
 }
@@ -107,7 +113,12 @@ article {
 
 .mini-article {
     margin-bottom: 23px;
+    cursor: pointer;
+        &:hover .article-text > span {
+            color: $colorAccent;
+        }
 }
+
 .article-wrap {
     display: flex;
     justify-content: space-between;

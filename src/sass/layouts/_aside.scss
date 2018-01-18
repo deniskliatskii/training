@@ -123,3 +123,84 @@
 * VIDEO
 *
 ***/
+
+.video-wrap {
+    background: $colorBorder;
+    border-radius: 5px;
+    padding: 11px 25px 9px 11px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video__window {
+    width: 275px;
+    height: 226px;
+    background: blueviolet;
+    margin-right: 15px;
+}
+
+.video__text {
+    width: 130px;
+}
+.video-title {
+    @include titleAccent;
+    margin-bottom: 16px;
+}
+
+.video__item {
+    color: $colorGray;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+     &:not(:last-child) {
+         margin-bottom: 13px;
+     }
+}
+/***
+*
+* BLOGSTUFF
+*
+***/
+
+.blogstuff {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+.blogstuff-title {
+    @include titleAccent;
+    margin-bottom: 10px;
+}
+
+.blogstuff__list {
+    padding: 15px 0 0 0;
+    border-top: 1px solid $colorBorder;
+}
+.categories__item {
+    color: $colorDefolt;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+        & > span {
+            color: $colorAccent;
+            font-size: 0.75rem;
+        }
+}
+
+.categories,
+.archives,
+.sites {
+    width: 33.3%;
+    border-bottom: 1px solid $colorBorder;
+    padding: 0 0 15px 0;
+    margin-right: 16px;
+}
+
+.slider__bottom-wrap {
+    padding: 17px 16px 29px 16px;
+    background: $colorBorder;
+    border-radius: 5px;
+    position: relative;
+}
+

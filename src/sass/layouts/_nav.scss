@@ -15,10 +15,12 @@
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
     .nav-top__item {
         padding: 10px 0 8px 0;
+        cursor: pointer;
         transition: background .2s ease-in-out;
         &:hover {
             background: $colorGray;
@@ -29,7 +31,6 @@
     }
 
     .nav-top__link {
-        display: inline-block;
         color: #2b2b2b;
         font-size: 0.75rem;
         font-weight: 400;
@@ -54,6 +55,101 @@
             .nav-top__item:hover .nav-top__link:before {
                 height: 0;
             }
+
+/***
+*
+* SUB MENU
+*
+***/
+
+.sub-menu__list {
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    display: none;
+}
+
+    .sub-menu__item {
+        padding: 11px 0 8px 0;
+        display: inline-block;
+        cursor: pointer;
+            &:last-child > .sub-menu__link:before {
+                height: 0;
+            }
+                &:hover .sub-menu__link {
+                    color: $colorAccent;
+                }
+    }
+
+    .sub-menu__link {
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 400;
+        padding: 0 15px;
+        position: relative;
+        transition: color .2s ease-in-out;
+            &:before {
+                content: '';
+                background: #fff;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            
+            
+    }
+
+.nav-top__item:hover .sub-menu__list {
+    display: block;
+}
+    
+
+/***
+*
+* SUB SUB MENU
+*
+***/
+
+.child-menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 32px;
+    z-index: 1;
+    width: 120px;
+    display: none;
+}
+
+    .sub-menu__item:hover .child-menu__list {
+        display: block;
+    }
+
+    .child-menu__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .child-menu__link {
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 400;
+        background: $colorGray;
+        padding: 8px 15px;
+        transition: color .2s ease-in-out,
+                    background .2s ease-in-out;
+                
+            &:hover {
+                color: $colorAccent;
+                background: rgb(89, 89, 89);
+            }
+    }
+
 
 /***
 *
@@ -98,4 +194,4 @@
         background: #9c9e9d;
         top: 0;
         right: 0;
-    }
+    } 

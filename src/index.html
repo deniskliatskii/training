@@ -50,9 +50,47 @@
             <div left-menu>
                 <ul class="nav-top__list nav__list">
                     <li class="nav-top__item"><a href="#" class="nav-top__link">Category 1</a></li>
-                    <li class="nav-top__item"><a href="#" class="nav-top__link">Category 2</a></li>
+                    <li class="nav-top__item"><a href="#" class="nav-top__link">Category 2</a>
+
+                        <ul class="sub-menu__list">                            
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 1</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 2</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 3</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 4</a>
+
+                                <ul class="child-menu__list">
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 1</a></li>
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 2</a></li>
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 3</a></li>
+                                </ul>
+
+                            </li>                            
+                        </ul>
+
+                    </li>
                     <li class="nav-top__item"><a href="#" class="nav-top__link">Category 3</a></li>
-                    <li class="nav-top__item"><a href="#" class="nav-top__link">Category 4</a></li>
+                    <li class="nav-top__item"><a href="#" class="nav-top__link">Category 4</a>
+
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 1</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 2</a>
+
+                                <ul class="child-menu__list">
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 1</a></li>
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 2</a></li>
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 3</a></li>
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 4</a></li>
+                                    <li class="child-menu__item"><a href="#" class="child-menu__link">Sub Sub Menu 5</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 3</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 4</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 5</a></li>
+                            <li class="sub-menu__item"><a href="#" class="sub-menu__link">Sub Menu 6</a></li>
+                        </ul>
+                        
+                    </li>
                     <li class="nav-top__item"><a href="#" class="nav-top__link">Category 5</a></li>
                     <li class="nav-top__item"><a href="#" class="nav-top__link">Category 6</a></li>
                 </ul>
@@ -237,6 +275,7 @@
                                
         </main> <!-- ./MAIN-CONTENT -->
     
+<!-- /*** ==================================================== ***/ -->
 
         <!-- ASIDE -->
         <aside class="aside-content">
@@ -253,9 +292,12 @@
             <div class="slider-wrap">
                 
                 <div class="slider">
-                    <div><img src="img/slider/slider.png" alt=""></div>
-                    <div><img src="img/slider/slider.png" alt=""></div>
-                    <div><img src="img/slider/slider.png" alt=""></div>
+                    <div><img src="img/slider/slider-1.jpg" alt=""></div>
+                    <div><img src="img/slider/slider-2.jpg" alt=""></div>
+                    <div><img src="img/slider/slider-3.jpg" alt=""></div>
+                    <div><img src="img/slider/slider-1.jpg" alt=""></div>
+                    <div><img src="img/slider/slider-2.jpg" alt=""></div>
+                    <div><img src="img/slider/slider-3.jpg" alt=""></div>
                 </div>
                 
                 <p class="slider-text">Advertising information</p>
@@ -361,46 +403,67 @@
             <!-- Blogstuff -->
             <div class="blogstuff">
                 <!-- Categories list -->
-                <h2 class="blogstuff-title">Categories</h2>
-                <ul class="categories__list list">
-                    <li class="categories__item">Category 1<span>[20]</span></li>
-                    <li class="categories__item">Category 2<span>[5]</span></li>
-                    <li class="categories__item">Category 3<span>[40]</span></li>
-                    <li class="categories__item">Category 4<span>[35]</span></li>
-                    <li class="categories__item">Category 5<span>[7]</span></li>
-                    <li class="categories__item">Category 6<span>[15]</span></li>
-                </ul> <!-- ./Categories list -->
+                <div class="categories">
+                    <h2 class="blogstuff-title">Categories</h2>
+                    <ul class="categories__list blogstuff__list list">
+                        <li class="categories__item">Category 1 <span>[20]</span></li>
+                        <li class="categories__item">Category 2 <span>[5]</span></li>
+                        <li class="categories__item">Category 3 <span>[40]</span></li>
+                        <li class="categories__item">Category 4 <span>[35]</span></li>
+                        <li class="categories__item">Category 5 <span>[7]</span></li>
+                        <li class="categories__item">Category 6 <span>[15]</span></li>
+                    </ul> 
+                </div> <!-- ./Categories list -->
 
                 <!-- Archives list -->
-                <h2 class="blogstuff-title">Archives</h2>
-                <ul class="archives__list list">
-                    <li class="categories__item">January 2007<span>[9]</span></li>
-                    <li class="categories__item">February 2007<span>[13]</span></li>
-                    <li class="categories__item">March 2007<span>[28]</span></li>
-                    <li class="categories__item">April 2007<span>[20]</span></li>
-                    <li class="categories__item">May 2007<span>[9]</span></li>
-                    <li class="categories__item">June 2007<span>[15]</span></li>
-                    <li class="categories__item">July 2007<span>[26]</span></li>
-                    <li class="categories__item">August 2007<span>[36]</span></li>
-                </ul> <!-- ./Archives list -->
+                <div class="archives">
+                    <h2 class="blogstuff-title">Archives</h2>
+                    <ul class="archives__list blogstuff__list list">
+                        <li class="categories__item">January 2007 <span>[9]</span></li>
+                        <li class="categories__item">February 2007 <span>[13]</span></li>
+                        <li class="categories__item">March 2007 <span>[28]</span></li>
+                        <li class="categories__item">April 2007 <span>[20]</span></li>
+                        <li class="categories__item">May 2007 <span>[9]</span></li>
+                        <li class="categories__item">June 2007 <span>[15]</span></li>
+                        <li class="categories__item">July 2007 <span>[26]</span></li>
+                        <li class="categories__item">August 2007 <span>[36]</span></li>
+                    </ul> 
+                </div> <!-- ./Archives list -->
 
                 <!-- Related Sites list -->
-                <h2 class="blogstuff-title">Related Sites</h2>
-                <ul class="sites__list list">
-                    <li class="categories__item">Development Blog</li>
-                    <li class="categories__item">Documentation</li>
-                    <li class="categories__item">Plugins</li>
-                    <li class="categories__item">Suggest Ideas</li>
-                    <li class="categories__item">Support Forum</li>
-                    <li class="categories__item">Themes</li>
-                    <li class="categories__item">WordPress Planet</li>
-                </ul> <!-- ./Related Sites list -->
+                <div class="sites">
+                    <h2 class="blogstuff-title">Related Sites</h2>
+                    <ul class="sites__list blogstuff__list list">
+                        <li class="categories__item">Development Blog</li>
+                        <li class="categories__item">Documentation</li>
+                        <li class="categories__item">Plugins</li>
+                        <li class="categories__item">Suggest Ideas</li>
+                        <li class="categories__item">Support Forum</li>
+                        <li class="categories__item">Themes</li>
+                        <li class="categories__item">WordPress Planet</li>
+                    </ul> 
+                </div> <!-- ./Related Sites list -->
 
 
             </div> <!-- ./Blogstuff -->
 
             <!-- Advertising information -->
             <div class="advertising">
+                <!-- Slider -->
+            <div class="slider__bottom-wrap">
+                
+                <div class="bottom-slider">
+                    <div><img src="img/flash-1.jpg" alt=""></div>
+                    <div><img src="img/flash-1.jpg" alt=""></div>
+                    <div><img src="img/flash-1.jpg" alt=""></div>
+                    <div><img src="img/flash-1.jpg" alt=""></div>
+                    <div><img src="img/flash-1.jpg" alt=""></div>
+                    <div><img src="img/flash-1.jpg" alt=""></div>
+                    
+                </div>
+                
+                <p class="slider-text">Advertising information</p>
+            </div> <!-- Slider -->
 
             </div> <!-- ./Advertising information -->
         </aside> <!-- ./ASIDE -->
