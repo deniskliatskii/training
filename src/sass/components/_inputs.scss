@@ -8,6 +8,10 @@
     width: 204px;
     margin-right: 7px;
 
+        @media screen and (max-width: 470px) {
+            width: 150px;
+        }
+
 }
 
 .search-iput::-webkit-input-placeholder {        /* Chrom Safari*/

@@ -37,18 +37,29 @@
                 <div class="rss-ico"></div>
             </div>
             <!-- ./rss -->
+
+            
         </div>
-
+        
     </header> <!-- ./HEADER -->
-
+    
+    
     <!-- NAVIGATION -->
     <nav class="nav container">
 
+
+        <!-- ***** RESPONSIVE NAVIGATION ***** -->
+        <input class="input-menu" type="checkbox" name="menu" id="menu">
+        <label class="burger-btn" for="menu"><i class="fa fa-bars" aria-hidden="true"></i></label>        
+        <label class="overlay-nav" for="menu"></label>
+        <!-- ***** ./RESPONSIVE NAVIGATION ***** -->
+        
+        
         <!-- Top navigation -->
         <div class="nav-top">
 
-            <div left-menu>
-                <ul class="nav-top__list nav__list">
+            <div class="left-menu">
+                <ul class="nav-top__list nav__list responiv__list">
                     <li class="nav-top__item"><a href="#" class="nav-top__link">Category 1</a></li>
                     <li class="nav-top__item"><a href="#" class="nav-top__link">Category 2</a>
 
@@ -96,8 +107,8 @@
                 </ul>
             </div>
 
-            <div class="right-manu">
-                <ul class="nav-top__list nav__list">
+            <div class="right-menu">
+                <ul class="nav-top__list nav__list responiv__list">
                     <li class="nav-top__item"><a href="#" class="nav-top__link">videos</a></li>
                     <li class="nav-top__item"><a href="#" class="nav-top__link">extras</a></li>
                 </ul>
@@ -137,7 +148,7 @@
 
                 <h2 class="feature-card__title">London tubes are nice and clean</h2>
 
-                <time pubdate datetime="2007-11-29" class="time-post">Posted on 29 November 2007</time>
+                <time datetime="2007-11-29" class="time-post">Posted on 29 November 2007</time>
                 
                 <p class="article-text">Vitae eu condimentum, lectus arcu quisque ac nulla. Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla sit mollis quisque a. Turpis interdum bibendum tincidunt, mauris sed sit amet praesent sapien, pellentesque eleifend egestas turpis taciti sem, blandit nunc at suscipit sed. <span>[...more]</span></p>
 
@@ -192,86 +203,92 @@
 
             </article> <!-- ./article 2 -->
 
-            <!-- article 3 -->
-            <article class="mini-article">
-
-                <div class="article-wrap">
-
-                    <div class="article__images--min img-three"></div>
-                    <div class="aricle-content">
-                        <h2 class="article-min__title">Just another feature post</h2>
-            
-                        <p class="article-text">Dolor explicabo dolor urna, et mauris. Vitae eu condimentum, lectus arcu quisque ac nulla. Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien.<span class="show-more">Turpis interdum bibendum tincidunt, mauris sed sit amet praesent sapien, pellentesque eleifend egestas turpis taciti sem, blandit nunc at suscipit sed.</span> <span>[...more]</span>
-                        </p>
-            
+            <div class="show__more">
+                <!-- article 3 -->
+                <article class="mini-article">
+    
+                    <div class="article-wrap">
+    
+                        <div class="article__images--min img-three"></div>
+                        <div class="aricle-content">
+                            <h2 class="article-min__title">Just another feature post</h2>
+                
+                            <p class="article-text">Dolor explicabo dolor urna, et mauris. Vitae eu condimentum, lectus arcu quisque ac nulla. Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien.<span class="show-more">Turpis interdum bibendum tincidunt, mauris sed sit amet praesent sapien, pellentesque eleifend egestas turpis taciti sem, blandit nunc at suscipit sed.</span> <span>[...more]</span>
+                            </p>
+                
+                        </div>
                     </div>
-                </div>
-            
-                <footer class="article-footer">
-                    <p class="category">Category 1</p>
-                    <p class="coments-caunt">Coments (23)</p>
-                </footer>
-
-            </article> <!-- ./article 3 -->
-
-            <!-- article 4 -->
-            <article class="mini-article">
-
-                <div class="article-wrap">
-
-                    <div class="article__images--min img-four"></div>
-                    <div class="aricle-content">
-                        <h2 class="article-min__title">Just another feature post</h2>
-            
-                        <p class="article-text">Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla sit mollis quisque a.<span class="show-more">Turpis interdum bibendum tincidunt, mauris sed sit amet praesent sapien, pellentesque eleifend egestas turpis taciti sem, blandit nunc at suscipit sed.</span> <span>[...more]</span>
-                        </p>
-            
+                
+                    <footer class="article-footer">
+                        <p class="category">Category 1</p>
+                        <p class="coments-caunt">Coments (23)</p>
+                    </footer>
+    
+                </article> <!-- ./article 3 -->
+    
+                <!-- article 4 -->
+                <article class="mini-article">
+    
+                    <div class="article-wrap">
+    
+                        <div class="article__images--min img-four"></div>
+                        <div class="aricle-content">
+                            <h2 class="article-min__title">Just another feature post</h2>
+                
+                            <p class="article-text">Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla sit mollis quisque a.<span class="show-more">Turpis interdum bibendum tincidunt, mauris sed sit amet praesent sapien, pellentesque eleifend egestas turpis taciti sem, blandit nunc at suscipit sed.</span> <span>[...more]</span>
+                            </p>
+                
+                        </div>
                     </div>
-                </div>
-            
-                <footer class="article-footer">
-                    <p class="category">Category 1</p>
-                    <p class="coments-caunt">Coments (23)</p>
-                </footer>
+                
+                    <footer class="article-footer">
+                        <p class="category">Category 1</p>
+                        <p class="coments-caunt">Coments (23)</p>
+                    </footer>
+    
+                </article> <!-- ./article 4 -->
+    
+                <!-- article 5 -->
+                <article class="mini-article">
+                                                   
+                    <h2 class="article-min__title">Just another feature post</h2>
+    
+                    <time datetime="2007-11-29" class="time-post">Posted on 29 November 2007</time>
+    
+                    <p class="article-text">Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla
+                    </p>
+                               
+                    <footer class="article-footer">
+                        <p class="category">Category 1</p>
+                        <p class="coments-caunt">Coments (23)</p>
+                    </footer>
+    
+                </article> <!-- ./article 5 -->
+    
+                <!-- article 6 -->
+                <article class="mini-article">
+                                                   
+                    <h2 class="article-min__title">Just another feature post</h2>
+    
+                    <time datetime="2007-11-29" class="time-post">Posted on 29 November 2007</time>
+    
+                    <p class="article-text">Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla
+                    </p>
+                               
+                    <footer class="article-footer">
+                        <p class="category">Category 1</p>
+                        <p class="coments-caunt">Coments (23)</p>
+                    </footer>
+    
+                </article> <!-- ./article 6 -->
+            </div>
 
-            </article> <!-- ./article 4 -->
-
-            <!-- article 5 -->
-            <article class="mini-article">
-                                               
-                <h2 class="article-min__title">Just another feature post</h2>
-
-                <time pubdate datetime="2007-11-29" class="time-post">Posted on 29 November 2007</time>
-
-                <p class="article-text">Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla
-                </p>
-                           
-                <footer class="article-footer">
-                    <p class="category">Category 1</p>
-                    <p class="coments-caunt">Coments (23)</p>
-                </footer>
-
-            </article> <!-- ./article 5 -->
-
-            <!-- article 6 -->
-            <article class="mini-article">
-                                               
-                <h2 class="article-min__title">Just another feature post</h2>
-
-                <time pubdate datetime="2007-11-29" class="time-post">Posted on 29 November 2007</time>
-
-                <p class="article-text">Etiam amet mollis eu vestibulum egestas. Sunt morbi vitae pede sapien, ligula hymenaeos tincidunt vivamus, ante leo lectus donec mattis, pharetra et nulla
-                </p>
-                           
-                <footer class="article-footer">
-                    <p class="category">Category 1</p>
-                    <p class="coments-caunt">Coments (23)</p>
-                </footer>
-
-            </article> <!-- ./article 6 -->
+            <div class="show-btn">
+                <a class="show-btn__link" href="#">Show more</a>
+            </div>
 
             <div class="archives-article">
-                <h2 class="archives-title">Find more articles in the Archives...</h2>
+                <a href="#" class="archives-title">Find more articles in the Archives...</a>
             </div>
                                
         </main> <!-- ./MAIN-CONTENT -->
@@ -388,7 +405,7 @@
             <div class="video-wrap">
 
                 <div class="video__window">
-                    <iframe width="275" height="226" src="https://www.youtube.com/embed/ik22FS1cEFg" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ik22FS1cEFg" frameborder="0" allow="autoplay; encrypted-media"
                         allowfullscreen></iframe>
                 </div>
 
@@ -476,7 +493,7 @@
                 </div> <!-- Slider -->
 
             </div> <!-- ./Advertising information -->
-            
+
         </aside> <!-- ./ASIDE -->
     </div>
     

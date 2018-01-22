@@ -18,6 +18,44 @@
   cursor: pointer;
 }
 
+
+/***
+*
+* BUTTON SHOW MORE
+*
+***/
+
+.show-btn__link {
+  display: inline-block;
+  background: $colorAccent;
+  border-radius: 5px;
+  color: $colorSubmit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: -0.019rem;
+  padding: 8px 14px 6px 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.show-btn__link:before {
+    content: '';
+    background: rgba(255, 255, 255, 0.678);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width .2s ease-in-out,
+                opacity .4s ease-in-out;
+}
+.show-btn__link:hover.show-btn__link:before {
+    width: 100%;
+    opacity: .3;
+}
+
 /***
 *
 * BUTTON UP
@@ -27,7 +65,7 @@
 .btn-up {
   position: fixed;
   bottom: -50px;
-  right: 50px;
+  right: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -37,6 +75,7 @@
   outline: none;
   border: none;
   transition: .8s;
+  border: 1px solid rgb(138, 134, 134);
 }
 
     .btn-up__active{

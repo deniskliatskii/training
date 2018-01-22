@@ -17,19 +17,19 @@
   padding: 0 20px;
   margin: 0 auto;
 
-  @media screen and (max-width: 1400px) {
-  }
-  @media screen and (max-width: 1220px) {
-    width: 992px;
-  }
+  // @media screen and (max-width: 1400px) {
+  // }
+  // @media screen and (max-width: 1220px) {
+  //   width: 992px;
+  // }
   @media screen and (max-width: 1012px) {
-    width: 768px;
+    width: 100%;
   }
   @media screen and (max-width: 788px) {
-    width: 576px;
+    // width: 576px;
   }
   @media screen and (max-width: 596px) {
-    width: 90%;
+    width: 100%;
     padding: 0 15px;
   }
 }

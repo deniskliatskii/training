@@ -20,6 +20,10 @@
             margin-right: 15px;
             background: url(../img/logo/logo.png)center center no-repeat;
             background-size: cover;
+
+                @media screen and (max-width: 1012px) {
+                    display: none;
+                }
         }
 
         .logo-name {
@@ -32,6 +36,13 @@
                 & > span {
                     color: $colorAccent;
                 }
+                @media screen and (max-width: 1012px) {
+                    font-size: 3rem;
+                }
+                @media screen and (max-width: 410px) {
+                    font-size: 2rem;
+                }
+                
         }
 
         .logo-subname {
@@ -40,6 +51,10 @@
             font-size: 1.125rem;
             font-weight: 400;
             letter-spacing: -0.056rem;
+
+                @media screen and (max-width: 410px) {
+                    font-size: 0.8rem;
+                }
         }
 
 /***
@@ -63,6 +78,9 @@
     .rss {
         display: flex;
         align-items: center;
+        @media screen and (max-width: 720px) {
+            display: none;
+        }
     }
 
         .rss-ico {

@@ -1,6 +1,18 @@
+@media screen and (max-width: 788px) {
+     .flex-container {
+        flex-direction: column;
+    }
+}
+   
+
 .aside-content {
     width: 48%;
     padding: 13px 0 180px 0;
+
+        @media screen and (max-width: 788px) {
+            width: 100%;
+            padding: 13px 0;
+        }
 }
 
 .list {
@@ -17,7 +29,11 @@
 
     .search {
         text-align: right;
-        
+
+        @media screen and (max-width: 788px) {
+            text-align: center;
+            margin: 40px 0;
+        }
     }
         .search-wrap {
             background: $colorBorder;
@@ -33,12 +49,32 @@
 *
 ***/
 
+// Change defolt button next end prev
+.slick-prev:before {
+    content: '<';
+    color: $colorGray;
+    font-family: inherit;
+}
+
+.slick-next:before {
+    content: '>';
+    color: $colorGray;
+    font-family: inherit;
+}
     .slider-wrap {
         padding: 17px 28px 29px 28px;
         background: $colorBorder;
         border-radius: 5px;
         position: relative;
         margin-bottom: 14px;
+
+            @media screen and (max-width: 788px) {
+            width: 80%;
+            margin: 0 auto 40px auto;
+            }
+            @media screen and (max-width: 596px) {
+                display: none;
+            }
     }
 
     .slider-text {
@@ -58,7 +94,11 @@
 ***/
 
     .tabs-wrap {
-        margin-bottom: 13px
+        margin-bottom: 13px;
+        
+        @media screen and (max-width: 788px) {
+            margin-bottom: 40px;
+        }
     }
 
     /*============================
@@ -69,11 +109,19 @@
         background: $colorBorder;
         border-radius: 0 0 5px 5px;
         padding: 28px 0 39px 21px;
+        
+            @media screen and (max-width: 788px) {
+                border-radius: 0 5px 5px 5px;
+                padding: 28px 0 39px 41px;
+            }            
+            @media screen and (max-width: 470px) {
+                padding: 20px;
+            }            
     }
 
         .fa-star {
             color: $colorAccent;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             margin-right: 9px;
         }
 
@@ -110,13 +158,34 @@
             background: $colorGray;
             border-radius: 5px 5px 0 0;
             cursor: pointer;
+
+                @media screen and (max-width: 1012px) {
+                    padding: 11px 15px 8px 15px;
+                }
+                @media screen and (max-width: 880px) {
+                    text-transform: none;
+                }
+                @media screen and (max-width: 596px) {
+                    text-transform: none;
+                    padding: 11px 20px 8px 20px;
+                }
+                @media screen and (max-width: 470px) {
+                    padding: 8px 15px;
+                }
+                @media screen and (max-width: 420px) {
+                    padding: 8px 8px;
+                }
+                @media screen and (max-width: 360px) {
+                    padding: 5px 5px;
+                    margin-left: 2px;
+                }
         }
 
             // Active tab background & color text
             .tabs__item--activ {
                 background: $colorBorder;
                 color: $colorAccent;
-            } 
+            }
 
 /***
 *
@@ -131,18 +200,44 @@
     margin-bottom: 24px;
     display: flex;
     justify-content: space-between;
+
+        @media screen and (max-width: 788px) {
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 596px) {
+            flex-direction: column;
+            padding: 11px;
+        }
 }
 
 .video__window {
     width: 275px;
     height: 226px;
-    background: blueviolet;
     margin-right: 15px;
+
+        @media screen and (max-width: 788px) {
+            width: 100%;
+            margin-right: 35px;
+            margin-bottom: 11px;
+        }
+        @media screen and (max-width: 596px) {
+            margin-right: 0;
+            margin-bottom: 11px;
+        }
 }
 
 .video__text {
     width: 130px;
+
+        @media screen and (max-width: 788px) {
+            width: 100%;
+            margin: auto 0;
+        }
+        @media screen and (max-width: 596px) {
+            width: 100%;
+        }
 }
+
 .video-title {
     @include titleAccent;
     margin-bottom: 16px;
@@ -176,7 +271,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
+
+    @media screen and (max-width: 788px) {
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: 475px) {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
+
 .blogstuff-title {
     @include titleAccent;
     margin-bottom: 10px;
@@ -185,7 +289,12 @@
 .blogstuff__list {
     padding: 15px 0 0 0;
     border-top: 1px solid $colorBorder;
+
+    @media screen and (max-width: 475px) {
+        border-top: none;
+    }
 }
+
 .categories__item a {
     color: $colorDefolt;
     font-size: 0.875rem;
@@ -208,12 +317,40 @@
     border-bottom: 1px solid $colorBorder;
     padding: 0 0 15px 0;
     margin-right: 16px;
+
+    
+        @media screen and (max-width: 788px) {
+            text-align: center;
+        }
+        @media screen and (max-width: 905px) {
+            width: 30.3%;
+            margin-right: 0;
+        }
+        @media screen and (max-width: 475px) {
+            width: 100%;
+            margin-bottom: 14px;
+        }
+        
 }
+
+@media screen and (max-width: 475px) {
+            .sites {
+                border-bottom: none;
+            }
+        }
 
 .slider__bottom-wrap {
     padding: 17px 16px 29px 16px;
     background: $colorBorder;
     border-radius: 5px;
     position: relative;
+
+        @media screen and (max-width: 788px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 596px) {
+            display: none;
+        }
 }
 
